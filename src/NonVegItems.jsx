@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './NonVegItems.css';
-import { addToCart } from './Store';
+import { addToCart } from './store';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -10,7 +10,7 @@ function NonVegItems() {
   const dispatch = useDispatch();
 
   const priceRanges = [
-    
+
     { value: 'Rs 200 to Rs 250', min: 200, max: 250 },
     { value: 'Rs 250 to Rs 300', min: 250, max: 300 },
     { value: 'Rs 300 to Rs 350', min: 300, max: 350 },

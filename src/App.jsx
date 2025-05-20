@@ -17,7 +17,7 @@ import './App.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Signup from './Signup';
-import { logout } from './Store';
+import { logout } from './store';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PageNotFound from './PageNotFound';
