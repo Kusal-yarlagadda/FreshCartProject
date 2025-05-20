@@ -7,15 +7,13 @@ import NonVegItems from './NonVegItems';
 import FruitsAndVegetables from './FruitsAndVegetables';
 import DairyProducts from './DairyProducts';
 import SignIn from './Signin';
-import Cart from './cart';
+import Cart from './Cart';
 import Orders from './Orders';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import Home from './Home';
 
 import './App.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Signup from './Signup';
 import { logout } from './store';
 import { ToastContainer, toast } from 'react-toastify';
