@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { loginUser, logout } from './store';
+import { loginUser, logout } from './Store';
 import './SignIn.css';
 
 function SignIn() {

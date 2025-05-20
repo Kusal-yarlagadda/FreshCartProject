@@ -11,7 +11,7 @@ import {
   incrementCart,
   orderDetails,
   removeCart,
-} from "./store";
+} from "./Store";
 
 function Cart() {
   const cartObjects = useSelector((state) => state.cart);
