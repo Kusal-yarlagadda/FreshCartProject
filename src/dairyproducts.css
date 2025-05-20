@@ -1,0 +1,165 @@
+.dairyproducts-container {
+  padding: 20px;
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dairyproducts-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Filters Section */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if space is insufficient */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters-container label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.filters-container input {
+  margin-right: 10px;
+}
+
+.clear-filters-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.clear-filters-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Dairy Products Grid */
+.dairyproducts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .dairyproducts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.dairyproducts-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dairyproducts-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dairyproducts-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.dairyproducts-card h3 {
+  margin: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.dairyproducts-card p {
+  margin: 0 15px 15px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.dairyproducts-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 15px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: block;
+  width: calc(100% - 30px);
+}
+
+.dairyproducts-card button:hover {
+  background-color: #0056b3;
+}
+
+.dairyproducts-card button:focus {
+  outline: none;
+}
+
+.dairyproducts-card button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Pagination Buttons */
+.pagination-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pagination-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-container button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-container button:disabled {
+  background-color: #d6d6d6;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination-container button.current-page {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  pointer-events: none;
+}

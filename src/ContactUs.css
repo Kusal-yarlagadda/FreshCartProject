@@ -1,0 +1,166 @@
+.contact-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  color: #2c3e50;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #27ae60;
+  margin-bottom: 35px;
+}
+
+/* Flex container for Contact info and Form side-by-side */
+.contact-form-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Contact Details Styling */
+.contact-details {
+  flex: 1 1 300px;
+  background-color: #e8f5e9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(39, 174, 96, 0.2);
+}
+
+.contact-details h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Message Form Styling */
+.message-form {
+  flex: 1 1 400px;
+  background-color: #f1f8e9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(139, 195, 74, 0.2);
+}
+
+.message-form h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.message-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.message-form input,
+.message-form textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #a5d6a7;
+  outline-color: #66bb6a;
+  transition: border-color 0.3s ease;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+  border-color: #388e3c;
+}
+
+.message-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.message-form button {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+  background-color: #1e8449;
+}
+
+/* Social Section */
+.social-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.social-section h2 {
+  font-size: 2rem;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.social-links img {
+  width: 55px;
+  height: 55px;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 2px 4px rgba(39, 174, 96, 0.7));
+}
+
+/* Map Section */
+.map-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+iframe {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  min-height: 400px;
+  width: 100%;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .contact-form-wrapper {
+    flex-direction: column;
+  }
+  .contact-details,
+  .message-form {
+    flex: 1 1 100%;
+  }
+}

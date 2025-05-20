@@ -1,0 +1,48 @@
+.pagenotfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.pagenotfound-image {
+  max-width: 600px; /* Increased max width */
+  width: 80%; /* Adjusted width for responsiveness */
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better visibility */
+}
+
+.pagenotfound-heading {
+  font-size: 3rem; /* Slightly larger font size */
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.pagenotfound-message {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.pagenotfound-button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagenotfound-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}

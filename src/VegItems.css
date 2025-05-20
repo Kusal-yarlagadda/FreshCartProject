@@ -1,0 +1,202 @@
+/* Container styling */
+.veg-items-container {
+  padding: 20px;
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.veg-items-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Filters container */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters-container label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.filters-container label:hover {
+  color: #007bff;
+}
+
+.filters-container input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filters-container input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border-color: #0056b3;
+  position: relative;
+}
+
+.filters-container input[type="checkbox"]:checked::after {
+  content: "✔";
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Clear Filters Button */
+.clear-filters-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.clear-filters-button:hover {
+  background-color: #e60000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clear-filters-button:active {
+  background-color: #cc0000;
+  transform: scale(0.98);
+}
+
+/* Grid for products */
+.veg-products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .veg-products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Product cards */
+.veg-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.veg-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.veg-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.veg-card h3 {
+  margin: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.veg-card p {
+  margin: 0 15px 15px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.veg-card button {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 15px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: block;
+  width: calc(100% - 30px);
+}
+
+.veg-card button:hover {
+  background-color: #2d6a4f;
+}
+
+.veg-card button:active {
+  background-color: #1f4e37;
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Pagination buttons */
+.pagination-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pagination-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.pagination-container button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+.pagination-container button:disabled {
+  background-color: #d6d6d6;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination-container button.current-page {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  pointer-events: none;
+}
